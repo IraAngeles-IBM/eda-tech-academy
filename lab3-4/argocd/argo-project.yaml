@@ -8,7 +8,7 @@ metadata:
 spec:
   description: The ArgoCD project to manage the real time inventory Solution deployment
   sourceRepos: 
-  - https://github.com/jbcodeforce/eda-tech-academy.git
+  - https://github.com/IraAngeles-IBM/eda-tech-academy.git
   # Only permit applications to deploy to the following namespace in the same cluster
   destinations:
   - namespace: ventress8

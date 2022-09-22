@@ -11,7 +11,7 @@ spec:
   project: ventress8
   source:
     path: lab3-4/services/kconnect
-    repoURL: https://github.com/jbcodeforce/eda-tech-academy.git
+    repoURL: https://github.com/IraAngeles-IBM/eda-tech-academy.git
   syncPolicy:
     automated:
       prune: true
