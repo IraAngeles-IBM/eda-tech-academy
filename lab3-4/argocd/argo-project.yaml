@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: ahsoka20
+  name: ventress8
   namespace: openshift-gitops
   labels:
     gitops.tier.layer: infra
@@ -11,7 +11,7 @@ spec:
   - https://github.com/jbcodeforce/eda-tech-academy.git
   # Only permit applications to deploy to the following namespace in the same cluster
   destinations:
-  - namespace: ahsoka20
+  - namespace: ventress8
     server: https://kubernetes.default.svc
   - namespace: cp4i-eventstreams
     server: https://kubernetes.default.svc
@@ -27,6 +27,6 @@ spec:
   - name: read-only
     description: Read-only privileges to this project
     policies:
-    - p, proj:ahsoka20:read-only, applications, get, ahsoka20/*, allow
+    - p, proj:ventress8:read-only, applications, get, ventress8/*, allow
     groups:
     - argocd-admins

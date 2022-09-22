@@ -61,7 +61,7 @@ spec:
           valueFrom:
             secretKeyRef:
               key: user.password
-              name: ahsoka20-tls-user
+              name: ventress8-tls-user
         envFrom:
         - configMapRef:
             name: store-inventory-cm
@@ -110,4 +110,4 @@ spec:
       - name: user-cert
         secret:
           optional: true
-          secretName: ahsoka20-tls-user
+          secretName: ventress8-tls-user

@@ -1,7 +1,7 @@
 apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaConnect
 metadata:
-  name: ahsoka20-connect-cluster
+  name: ventress8-connect-cluster
   annotations:
     eventstreams.ibm.com/use-connector-resources: "true"
 spec:
@@ -22,21 +22,21 @@ spec:
       imagePullSecrets: []
       metadata:
         annotations:
-          productChargedContainers: ahsoka20-connect-cluster-connect
+          productChargedContainers: ventress8-connect-cluster-connect
           eventstreams.production.type: CloudPakForIntegrationNonProduction
           productID: 2a79e49111f44ec3acd89608e56138f5
           productName: IBM Event Streams for Non Production
-          productVersion: 11.0.3
+          productVersion: 11.0.2
           productMetric: VIRTUAL_PROCESSOR_CORE
           cloudpakId: c8b82d189e7545f0892db9ef2731b90d
           cloudpakName: IBM Cloud Pak for Integration
           cloudpakVersion: 2022.2.1
           productCloudpakRatio: "2:1"
   config:
-    group.id: ahsoka20-connect-cluster
-    offset.storage.topic: ahsoka20-connect-cluster-offsets
-    config.storage.topic: ahsoka20-connect-cluster-configs
-    status.storage.topic: ahsoka20-connect-cluster-status
+    group.id: ventress8-connect-cluster
+    offset.storage.topic: ventress8-connect-cluster-offsets
+    config.storage.topic: ventress8-connect-cluster-configs
+    status.storage.topic: ventress8-connect-cluster-status
     config.storage.replication.factor: 3
     offset.storage.replication.factor: 3
     offset.storage.cleanup.policy: compact
@@ -50,7 +50,7 @@ spec:
      certificateAndKey:
        certificate: user.crt
        key: user.key
-       secretName: ahsoka20-tls-user
+       secretName: ventress8-tls-user
 #    username: my-connect-user
 #    passwordSecret:
 #      secretName: my-connect-user
